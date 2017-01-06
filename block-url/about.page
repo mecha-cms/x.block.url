@@ -20,7 +20,8 @@ Support these block patterns:
 
 ### Dependency
 
- - **Extension**
-   - Block
+#### Extension
+
+ - Block
  
  <!-- block:donate -->

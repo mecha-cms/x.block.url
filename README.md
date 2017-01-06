@@ -13,8 +13,3 @@ Support these block patterns:
  - `[‌[‌url.path‌]‌]` → `foo/bar`
  - `[‌[‌url.query‌]‌]` → `?foo=bar&baz=qux`
  - `[‌[‌url.current‌]‌]` → `http://localhost/a/foo/bar`
-
-### Dependency
-
- - **Extension**
-   - Block
