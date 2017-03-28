@@ -1,6 +1,6 @@
 <?php
 
-Block::set('url', function($content) {
+function fn_block_replace_url($content) {
     $state = Extend::state('block', 'union');
     $o = $state[1][0][0]; // `[[`
     $url = __url__();
@@ -10,4 +10,6 @@ Block::set('url', function($content) {
         }
     }
     return Block::replace('url', $url['url'], $content);
-});
+}
+
+Block::set('url', 'fn_block_replace_url', 10);
