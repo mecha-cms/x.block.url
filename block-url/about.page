@@ -4,6 +4,7 @@ description: Insert URL data to the page content.
 author: Taufik Nurrohman
 type: Markdown
 version: 2.0.0
+dependency: {"extension":["block"]}
 ...
 
 Support these block patterns:
@@ -18,11 +19,5 @@ Support these block patterns:
  - `[‌[‌url.path‌]‌]` → `foo/bar`
  - `[‌[‌url.query‌]‌]` → `?foo=bar&baz=qux`
  - `[‌[‌url.current‌]‌]` → `http://localhost/a/foo/bar`
-
-### Dependency
-
-#### Extension
-
- - Blocks
 
 <!-- block:donate -->
