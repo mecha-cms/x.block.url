@@ -3,7 +3,7 @@ title: Block: URL
 description: Insert URL data to the page content.
 author: Taufik Nurrohman
 type: Markdown
-version: 2.0.1
+version: 2.2.0
 
 dependency:
   extension:
@@ -12,15 +12,17 @@ dependency:
 
 Support these block patterns:
 
- - `[‌[‌url‌]‌]` → `http://localhost/a`
+ - `[‌[‌url‌]‌]` → `http://127.0.0.1/a`
  - `[‌[‌url.scheme]‌]` → `http`
  - `[‌[‌url.protocol‌]‌]` → `http://`
- - `[‌[‌url.host‌]‌]` → `localhost`
+ - `[‌[‌url.host‌]‌]` → `127.0.0.1`
  - `[‌[‌url.port‌]‌]` → `80`
  - `[‌[‌url.directory‌]‌]` → `a`
- - `[‌[‌url.url‌]‌]` → same as `[‌[‌url‌]‌]`
+ - `[‌[‌url.$‌]‌]` → same as `[‌[‌url‌]‌]`
+ - `[‌[‌url.i‌]‌]` → `1`
  - `[‌[‌url.path‌]‌]` → `foo/bar`
  - `[‌[‌url.query‌]‌]` → `?foo=bar&baz=qux`
- - `[‌[‌url.current‌]‌]` → `http://localhost/a/foo/bar`
+ - `[‌[‌url.clean‌]‌]` → `http://127.0.0.1/a/foo/bar`
+ - `[‌[‌url.current‌]‌]` → `http://127.0.0.1/a/foo/bar/1`
 
 <!-- block:donate -->
