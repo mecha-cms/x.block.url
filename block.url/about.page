@@ -7,7 +7,7 @@ version: 2.2.0
 
 dependency:
   extension:
-    - block
+  - block
 ...
 
 Support these block patterns:
