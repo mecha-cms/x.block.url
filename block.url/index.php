@@ -1,4 +1,4 @@
-<?php namespace fn\block;
+<?php namespace _\block;
 
 function url() {} // Reserved function
 
