@@ -5,9 +5,9 @@ author: Taufik Nurrohman
 type: Markdown
 version: 2.2.0
 
-dependency:
-  extension:
-  - block
+lot:
+  extend:
+    block: 1
 ...
 
 Support these block patterns:
