@@ -1,9 +1,23 @@
-<?php namespace _\block;
+<?php namespace _\lot\x\block;
 
 function url() {} // Reserved function
 
-foreach ($GLOBALS['URL'] as $k => $v) {
-    \Block::set('url.' . $k, $v, 10);
+foreach ([
+    'clean',
+    'current',
+    'directory',
+    'ground',
+    'hash',
+    'host',
+    'i',
+    'path',
+    'port',
+    'protocol',
+    'query',
+    'root',
+    'scheme'
+] as $v) {
+    \Block::set('url.' . $v, $url->{$v}, 10);
 }
 
-\Block::set('url', (string) $url, 10);
+\Block::set('url', $url, 10);

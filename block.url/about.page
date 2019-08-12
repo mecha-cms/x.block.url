@@ -1,13 +1,12 @@
 ---
-title: Block: URL
+title: URL Block
 description: Insert URL data to the page content.
 author: Taufik Nurrohman
 type: Markdown
-version: 2.2.1
+version: 2.2.2
 
-lot:
-  x:
-    block: 1
+use:
+  '.\lot\x\block': 1
 ...
 
 Support these block patterns:
@@ -17,12 +16,9 @@ Support these block patterns:
  - `[‌[‌url.protocol‌]‌]` → `http://`
  - `[‌[‌url.host‌]‌]` → `127.0.0.1`
  - `[‌[‌url.port‌]‌]` → `80`
- - `[‌[‌url.directory‌]‌]` → `a`
- - `[‌[‌url.$‌]‌]` → same as `[‌[‌url‌]‌]`
+ - `[‌[‌url.directory‌]‌]` → `/a`
  - `[‌[‌url.i‌]‌]` → `1`
- - `[‌[‌url.path‌]‌]` → `foo/bar`
+ - `[‌[‌url.path‌]‌]` → `/foo/bar`
  - `[‌[‌url.query‌]‌]` → `?foo=bar&baz=qux`
  - `[‌[‌url.clean‌]‌]` → `http://127.0.0.1/a/foo/bar`
  - `[‌[‌url.current‌]‌]` → `http://127.0.0.1/a/foo/bar/1`
-
-<!-- block:donate -->
