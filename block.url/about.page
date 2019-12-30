@@ -3,7 +3,7 @@ title: URL Block
 description: Insert URL data to the page content.
 author: Taufik Nurrohman
 type: Markdown
-version: 2.2.2
+version: 2.2.3
 
 use:
   '.\lot\x\block': 1
@@ -12,13 +12,12 @@ use:
 Support these block patterns:
 
  - `[‌[‌url‌]‌]` → `http://127.0.0.1/a`
- - `[‌[‌url.scheme]‌]` → `http`
  - `[‌[‌url.protocol‌]‌]` → `http://`
  - `[‌[‌url.host‌]‌]` → `127.0.0.1`
  - `[‌[‌url.port‌]‌]` → `80`
- - `[‌[‌url.directory‌]‌]` → `/a`
- - `[‌[‌url.i‌]‌]` → `1`
+ - `[‌[‌url.d]‌]` → `/a`
+ - `[‌[‌url.i‌]‌]` → `/1`
  - `[‌[‌url.path‌]‌]` → `/foo/bar`
  - `[‌[‌url.query‌]‌]` → `?foo=bar&baz=qux`
  - `[‌[‌url.clean‌]‌]` → `http://127.0.0.1/a/foo/bar`
- - `[‌[‌url.current‌]‌]` → `http://127.0.0.1/a/foo/bar/1`
+ - `[‌[‌url.current‌]‌]` → `http://127.0.0.1/a/foo/bar/1?foo=bar&baz=qux`

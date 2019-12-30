@@ -5,7 +5,7 @@ function url() {} // Reserved function
 foreach ([
     'clean',
     'current',
-    'directory',
+    'd',
     'ground',
     'hash',
     'host',
@@ -14,8 +14,7 @@ foreach ([
     'port',
     'protocol',
     'query',
-    'root',
-    'scheme'
+    'root'
 ] as $v) {
     \Block::set('url.' . $v, $url->{$v}, 10);
 }
