@@ -1,6 +1,6 @@
-<?php namespace _\lot\x\block;
+<?php namespace x\block__url;
 
-function url() {} // Reserved function
+function block() {} // Reserved function
 
 foreach ([
     'clean',
