@@ -1,22 +1,13 @@
-<?php namespace x\block__url;
+<?php namespace x;
 
-function block() {} // Reserved function
-
-foreach ([
-    'clean',
-    'current',
-    'd',
-    'ground',
-    'hash',
-    'host',
-    'i',
-    'path',
-    'port',
-    'protocol',
-    'query',
-    'root'
-] as $v) {
-    \Block::set('url.' . $v, $url->{$v}, 10);
+function block__url(string $content, array $data = []) {
+    if (0 === \strpos($data[0], 'url.')) {
+        return (string) ($GLOBALS['url']->{\substr($data[0], 4)} ?? "");
+    }
+    if ('url' === $data[0]) {
+        return (string) ($GLOBALS['url'] ?? "");
+    }
+    return "";
 }
 
-\Block::set('url', $url, 10);
+\Hook::set('block', __NAMESPACE__ . "\\block__url", 0);

@@ -1,23 +1,21 @@
 ---
 title: URL Block
 description: Insert URL data to the page content.
+icon: 'M2,4C2,2.89 2.9,2 4,2H7V4H4V7H2V4M22,4V7H20V4H17V2H20A2,2 0 0,1 22,4M20,20V17H22V20C22,21.11 21.1,22 20,22H17V20H20M2,20V17H4V20H7V22H4A2,2 0 0,1 2,20M10,2H14V4H10V2M10,20H14V22H10V20M20,10H22V14H20V10M2,10H4V14H2V10Z'
 author: Taufik Nurrohman
 type: Markdown
-version: 2.2.5
+version: 3.0.0
 
 use:
   '.\lot\x\block': 1
-  '.\lot\x\page': 1
 ...
 
 Support these block patterns:
 
- - <code>&#x5B;&#x5B;url&#x5D;&#x5D;</code> → `http://127.0.0.1/a`
+ - <code>&#x5B;&#x5B;url&#x5D;&#x5D;</code> → `http://127.0.0.1:8080`
  - <code>&#x5B;&#x5B;url.protocol&#x5D;&#x5D;</code> → `http://`
- - <code>&#x5B;&#x5B;url.host&#x5D;&#x5D;</code> → `127.0.0.1`
- - <code>&#x5B;&#x5B;url.port&#x5D;&#x5D;</code> → `80`
- - <code>&#x5B;&#x5B;url.d&#x5D;&#x5D;</code> → `/a`
- - <code>&#x5B;&#x5B;url.i&#x5D;&#x5D;</code> → `/1`
+ - <code>&#x5B;&#x5B;url.host&#x5D;&#x5D;</code> → `127.0.0.1:8080`
+ - <code>&#x5B;&#x5B;url.port&#x5D;&#x5D;</code> → `:8080`
  - <code>&#x5B;&#x5B;url.path&#x5D;&#x5D;</code> → `/foo/bar`
  - <code>&#x5B;&#x5B;url.query&#x5D;&#x5D;</code> → `?foo=bar&baz=qux`
- - <code>&#x5B;&#x5B;url.current&#x5D;&#x5D;</code> → `http://127.0.0.1/a/foo/bar/1?foo=bar&baz=qux`
+ - <code>&#x5B;&#x5B;url.current&#x5D;&#x5D;</code> → `http://127.0.0.1:8080/foo/bar/1?foo=bar&baz=qux`

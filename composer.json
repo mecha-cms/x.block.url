@@ -1,0 +1,8 @@
+{
+  "description": "Insert URL data to the page content.",
+  "license": "GPL-3.0-or-later",
+  "name": "mecha-cms/x.block.url",
+  "require": {
+    "mecha-cms/x.block": "^2.0.0"
+  }
+}
