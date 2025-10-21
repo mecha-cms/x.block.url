@@ -5,15 +5,15 @@ icon: 'M2,4C2,2.89 2.9,2 4,2H7V4H4V7H2V4M22,4V7H20V4H17V2H20A2,2 0 0,1 22,4M20,2
 color: '#2f2f2f'
 author: Taufik Nurrohman
 type: Markdown
-version: 3.0.1
+version: 3.0.2
 ...
 
 Support these block patterns:
 
  - <code>&#x5b;&#x5b;url&#x5d;&#x5d;</code> → `http://127.0.0.1:8080`
- - <code>&#x5b;&#x5b;url.protocol&#x5d;&#x5d;</code> → `http://`
  - <code>&#x5b;&#x5b;url.host&#x5d;&#x5d;</code> → `127.0.0.1:8080`
  - <code>&#x5b;&#x5b;url.port&#x5d;&#x5d;</code> → `:8080`
  - <code>&#x5b;&#x5b;url.path&#x5d;&#x5d;</code> → `/foo/bar`
  - <code>&#x5b;&#x5b;url.query&#x5d;&#x5d;</code> → `?foo=bar&baz=qux`
+ - <code>&#x5b;&#x5b;url.scheme&#x5d;&#x5d;</code> → `http://`
  - <code>&#x5b;&#x5b;url.current&#x5d;&#x5d;</code> → `http://127.0.0.1:8080/foo/bar/1?foo=bar&baz=qux`
